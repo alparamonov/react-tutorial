@@ -18,7 +18,7 @@
 1) When the modal pops up, click **Add Rule**. Choose the **Type** `Custom TCP Rule`, enter a **Port Range** of `3000` and choose the **Source** `My IP`.
 1) Click **Save**.
 1) Back in the Cloud9 IDE, in the Bash tab at the bottom of the screen, run the command
-`npm start`. This will boot up the stack and may take a few moments.
+`HOST=<YOUR_PUBLIC_IP> npm start`. This will boot up the stack and may take a few moments.
 1) In a separate browser window, go to the **Public DNS** address that you saved earlier, but add the **port** `3000` to the end of the URL. You should have something to the effect of: `http://ec2-xx-xxx-xxx-xxx.us-east-2.compute.amazonaws.com:3000`
 
 #### Note: Some firewalls block connections to AWS instances for security purposes. If this doesn't work, first try a different network.
